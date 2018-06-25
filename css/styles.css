@@ -36,13 +36,13 @@ h1 {
 }
 
 p {
-  color: #888;
+  color: #3366ff;
   font-size: 1em;
   margin: 0;
 }
 
 .hi5 {
-  color: #ccc;
+  color: #0066ff;
   font-size: 0.8em;
   margin-top: 10%;
 }
@@ -50,7 +50,7 @@ p {
 a,
 a:visited {
   text-decoration: none;
-  color: #3790FF;
+  color: #3366ff;
 }
 
 a:hover {
