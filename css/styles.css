@@ -42,12 +42,6 @@ p {
   margin: 0;
 }
 
-.hi5 {
-  color: #000000;
-  font-size: 0.8em;
-  margin-top: 10%;
-}
-
 a,
 a:visited {
   text-decoration: none;
@@ -55,5 +49,6 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #0000cc;
 }
