@@ -8,6 +8,13 @@ body,
   height: 100%;
 }
 
+.title-main {
+  line-height: 35px;
+  margin: 20px;
+  font-size: 36px;
+  padding-bottom: 10px;
+}
+
 body {
   text-align: center;
   background-color: #F0EDE5;
