@@ -26,7 +26,7 @@
 
 ## 🧪 What I Do
 
-Senior QA Analyst with 20+ years of experience in software quality, currently at **Planet** in Galway, Ireland. I work across the full QA spectrum — manual and automated testing, functional, regression, performance and UAT — in Agile/Scrum environments.
+Senior QA Analyst with 20+ years of experience in software quality, based in Galway, Ireland. I work across the full QA spectrum — manual and automated testing, functional, regression, performance and UAT — in Agile/Scrum environments.
 
 **Tools:** TestRail · qTest · JIRA · Confluence · Tosca · Sahi Pro · Ghost Inspector · Postman · OutSystems · GitHub Copilot
 
