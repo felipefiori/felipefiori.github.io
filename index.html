@@ -56,6 +56,26 @@
       padding: 3rem 2rem 4rem;
     }
 
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .profile-avatar {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      border: 3px solid #30363d;
+      object-fit: cover;
+      object-position: center top;
+      box-shadow: 0 0 0 4px #161b22;
+      flex-shrink: 0;
+    }
+    .profile-text .page-subtitle {
+      margin-bottom: 0;
+    }
+
     .page-title {
       font-size: clamp(1.6rem, 4vw, 2.2rem);
       font-weight: 700;
@@ -195,8 +215,13 @@
   </nav>
 
   <main>
-    <h1 class="page-title">About Me</h1>
-    <p class="page-subtitle">Senior QA Analyst · Galway, Ireland</p>
+    <div class="profile-header">
+      <img class="profile-avatar" src="images/profile.jpg" alt="Felipe Fiori">
+      <div class="profile-text">
+        <h1 class="page-title">About Me</h1>
+        <p class="page-subtitle">Senior QA Analyst · Galway, Ireland</p>
+      </div>
+    </div>
 
     <div class="intro-card">
       <div class="intro-item"><span class="label">📍 Location</span> Galway, Ireland (since 2018)</div>
