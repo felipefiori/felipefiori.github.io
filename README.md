@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  🇧🇷 🇮🇹 🇮🇪 &nbsp;|&nbsp; English · Portuguese
+   Citizenship: Brazilian | Italian | Irish &nbsp;|&nbsp; Languages: English · Portuguese
 </p>
 
 ---
