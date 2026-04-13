@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-   Citizenship: Brazilian | Italian | Irish &nbsp;|&nbsp; Languages: English · Portuguese
+   Citizenship: Brazilian · Italian · Irish &nbsp;|&nbsp; Languages: English · Portuguese
 </p>
 
 ---
