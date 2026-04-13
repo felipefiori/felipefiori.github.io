@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Felipe Fiori 👋</h1>
 
 <p align="center">
-  <strong>Senior QA Analyst</strong> · Galway, Ireland 🇮🇪 · 20+ Years in Software Quality
+  <strong>Senior QA Analyst</strong> · 20+ Years in Software Quality
 </p>
 
 <p align="center">
