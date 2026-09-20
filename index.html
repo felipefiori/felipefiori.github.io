@@ -1,395 +1,361 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Felipe Fiori | Senior QA Analyst</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Fiori — Senior QA Analyst | AI-Driven Test Automation</title>
+  <meta name="description" content="Felipe Fiori — Senior QA Analyst with 20+ years in IT & QA, specializing in FinTech, payments, Tax Free solutions at Planet, test automation, and AI tools.">
+  <meta name="author" content="Felipe Fiori">
+  <meta name="theme-color" content="#0b0f19">
 
-    :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --border: #30363d;
-      --muted: #21262d;
-      --text: #e6edf3;
-      --text-secondary: #8b949e;
-      --text-dim: #6e7681;
-      --accent: #58a6ff;
-    }
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Felipe Fiori — Senior QA Analyst | AI-Driven Test Automation">
+  <meta property="og:description" content="20+ years in IT & QA across FinTech, payments, and Tax Free solutions. Test automation, AI tools, and enterprise quality assurance.">
+  <meta property="og:url" content="https://felipefiori.github.io/">
+  <meta property="og:image" content="https://felipefiori.github.io/profile.jpg">
 
-    html { scroll-behavior: smooth; }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Felipe Fiori — Senior QA Analyst | AI-Driven Test Automation">
+  <meta name="twitter:description" content="20+ years in IT & QA across FinTech, payments, and Tax Free solutions. Test automation, AI tools, and enterprise quality assurance.">
+  <meta name="twitter:image" content="https://felipefiori.github.io/profile.jpg">
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
 
-    /* NAV */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      background: rgba(22, 27, 34, 0.95);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 2rem;
-      height: 56px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 100;
-    }
-    nav .brand {
-      color: var(--text);
-      font-weight: 700;
-      font-size: 0.95rem;
-      text-decoration: none;
-      letter-spacing: 0.04em;
-    }
-    nav .nav-links { display: flex; gap: 1.5rem; align-items: center; }
-    nav .nav-links a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-size: 0.82rem;
-      font-weight: 400;
-      transition: color 0.2s;
-    }
-    nav .nav-links a:hover { color: var(--text); }
+  <!-- Typography: Inter (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    /* SECTIONS */
-    section { padding: 5rem 2rem; max-width: 760px; margin: 0 auto; width: 100%; }
-    section:first-of-type { padding-top: 7rem; }
-
-    .section-label {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      margin-bottom: 1.25rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--muted);
-    }
-
-    /* HERO */
-    #hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding-top: 7rem;
-    }
-    .avatar {
-      width: 120px; height: 120px;
-      border-radius: 50%;
-      border: 3px solid var(--border);
-      object-fit: cover;
-      object-position: center top;
-      box-shadow: 0 0 0 5px var(--surface), 0 8px 32px rgba(0,0,0,0.4);
-      margin-bottom: 1.5rem;
-    }
-    #hero h1 {
-      font-size: clamp(1.8rem, 5vw, 2.6rem);
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 0.5rem;
-    }
-    #hero .subtitle {
-      font-size: 1rem;
-      font-weight: 300;
-      color: var(--text-secondary);
-      margin-bottom: 0.4rem;
-    }
-    #hero .location {
-      font-size: 0.85rem;
-      color: var(--text-dim);
-      margin-bottom: 2.5rem;
-    }
-
-    /* SOCIAL BUTTONS */
-    .social-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-      max-width: 480px;
-    }
-    .social-btn {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.55rem 1.1rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 0.82rem;
-      font-weight: 600;
-      border: 1px solid var(--border);
-      transition: transform 0.15s, opacity 0.15s;
-    }
-    .social-btn:hover { transform: translateY(-2px); opacity: 0.85; }
-    .social-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
-    .btn-linkedin  { background: #0077b5; color: #fff; border-color: #0077b5; }
-    .btn-github    { background: var(--muted); color: var(--text); }
-    .btn-x { background: #000; color: #fff; border-color: #333; }
-    .btn-instagram { background: #e1306c; color: #fff; border-color: #e1306c; }
-    .btn-email     { background: var(--muted); color: var(--text); }
-
-    /* CARDS */
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem 2rem;
-      margin-bottom: 1rem;
-    }
-    .card h3 {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 0.2rem;
-    }
-    .card .meta {
-      font-size: 0.78rem;
-      color: var(--text-dim);
-      margin-bottom: 0.85rem;
-    }
-    .card p {
-      font-size: 0.875rem;
-      color: var(--text-secondary);
-      line-height: 1.7;
-    }
-
-    /* INTRO CARD */
-    .intro-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.75rem 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem 2.5rem;
-    }
-    .intro-item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.875rem;
-      color: var(--text-secondary);
-    }
-    .intro-item .label { font-weight: 600; color: var(--text); }
-    .intro-item a { color: var(--accent); text-decoration: none; }
-    .intro-item a:hover { text-decoration: underline; }
-
-    /* SKILLS */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .skill-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.25rem 1.5rem;
-    }
-    .skill-category {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      margin-bottom: 0.7rem;
-    }
-    .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .tag {
-      background: var(--muted);
-      color: #c9d1d9;
-      font-size: 0.73rem;
-      font-weight: 600;
-      padding: 0.3rem 0.65rem;
-      border-radius: 20px;
-      border: 1px solid var(--border);
-    }
-
-    /* PERSONAL */
-    .personal-list {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
-    .personal-item {
-      font-size: 0.875rem;
-      color: var(--text-secondary);
-      display: flex;
-      gap: 0.7rem;
-      align-items: flex-start;
-      line-height: 1.6;
-    }
-
-    /* DIVIDER */
-    .section-divider {
-      max-width: 760px;
-      margin: 0 auto;
-      border: none;
-      border-top: 1px solid var(--muted);
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.75rem;
-      color: var(--text-dim);
-      border-top: 1px solid var(--muted);
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
-    <a class="brand" href="#hero">Felipe Fiori</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#personal">Personal</a>
-      <a href="mailto:felipefiori@gmail.com">Email</a>
-    </div>
-  </nav>
+  <main class="portfolio-container">
+    
+    <!-- ─── HEADER & QUICK STATS ──────────────────────────────────────── -->
+    <header class="header-card">
+      <div class="avatar-wrapper">
+        <img class="avatar" src="profile.jpg" alt="Felipe Fiori" width="120" height="120" loading="eager">
+      </div>
 
-  <!-- HERO -->
-  <section id="hero">
-    <img class="avatar" src="profile.jpg" alt="Felipe Fiori">
-    <h1>Felipe Fiori</h1>
-    <p class="subtitle">Senior QA Analyst · 20+ Years in Software Quality</p>
-    <p class="location">📍 Galway, Ireland &nbsp;·&nbsp; 🇧🇷 🇮🇹 🇮🇪</p>
-    <div class="social-grid">
-      <a class="social-btn btn-linkedin" href="https://www.linkedin.com/in/felipefiori" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        LinkedIn
-      </a>
-      <a class="social-btn btn-github" href="https://github.com/felipefiori" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-        GitHub
-      </a>
-      <a class="social-btn btn-x" href="https://www.x.com/felipefiori" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.261 5.638 5.903-5.638zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        X
-      </a>
-      <a class="social-btn btn-instagram" href="https://www.instagram.com/felipefiori" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-        Instagram
-      </a>
-      <a class="social-btn btn-email" href="mailto:felipefiori@gmail.com">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        Email
-      </a>
-    </div>
-  </section>
+      <h1 class="name">Felipe Fiori</h1>
+      <p class="title">
+        <span>Senior QA Analyst</span>
+        <span class="title-separator" aria-hidden="true">|</span>
+        <span>AI-Driven Test Automation</span>
+      </p>
 
-  <hr class="section-divider">
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="section-label">About Me</div>
-    <div class="intro-card">
-      <div class="intro-item"><span class="label">📍 Location</span>Galway, Ireland (since 2018)</div>
-      <div class="intro-item"><span class="label">🌍 Citizenship</span>Brazilian · Italian · Irish</div>
-      <div class="intro-item"><span class="label">🗣️ Languages</span>English · Portuguese</div>
-      <div class="intro-item"><span class="label">✉️ Email</span><a href="mailto:felipefiori@gmail.com">felipefiori@gmail.com</a></div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="section-label">Experience</div>
-    <div class="card">
-      <h3>Senior QA Analyst · Planet</h3>
-      <div class="meta">Galway, Ireland · Sep 2022 – Present · Hybrid</div>
-      <p>Leading quality assurance efforts across web and mobile applications in a fast-paced Agile/Scrum environment. Responsible for test strategy, planning, execution and reporting, covering functional, regression, performance and UAT testing cycles.</p>
-    </div>
-    <div class="card">
-      <h3>QA Engineer · Hewlett Packard Enterprise / HP</h3>
-      <div class="meta">Porto Alegre, Brazil · ~2006 – 2018</div>
-      <p>Nearly a decade of QA engineering across enterprise software platforms, covering manual and automated testing, hardware validation, and cross-functional collaboration with global teams.</p>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="section-label">Skills & Tools</div>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-category">Test Management</div>
-        <div class="tags">
-          <span class="tag">TestRail</span><span class="tag">qTest</span><span class="tag">JIRA</span><span class="tag">Confluence</span>
+      <div class="header-badges">
+        <div class="badge">
+          <span>🇧🇷 🇮🇹 🇮🇪 Triple Citizen</span>
+          <span style="color: var(--text-muted); font-size: 0.72rem;">(Brazilian &middot; Italian &middot; Irish)</span>
+        </div>
+        <div class="badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Galway, Ireland 🇮🇪</span>
         </div>
       </div>
-      <div class="skill-card">
-        <div class="skill-category">Automation</div>
-        <div class="tags">
-          <span class="tag">Tosca</span><span class="tag">Sahi Pro</span><span class="tag">Ghost Inspector</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-category">API & Dev</div>
-        <div class="tags">
-          <span class="tag">Postman</span><span class="tag">OutSystems</span><span class="tag">GitHub Copilot</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-category">Testing Types</div>
-        <div class="tags">
-          <span class="tag">Functional</span><span class="tag">Regression</span><span class="tag">Performance</span><span class="tag">UAT</span><span class="tag">Black & White Box</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-category">Methodology</div>
-        <div class="tags">
-          <span class="tag">Agile</span><span class="tag">Scrum</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-category">Productivity</div>
-        <div class="tags">
-          <span class="tag">Microsoft 365 Copilot</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <hr class="section-divider">
+      <!-- Quick Stats Grid -->
+      <div class="stats-grid" aria-label="Key Career Statistics">
+        <div class="stat-card">
+          <div class="stat-number">20<span class="plus">+</span></div>
+          <div class="stat-label">Years in IT &amp; QA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8<span class="plus">+</span></div>
+          <div class="stat-label">Years at Planet</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">12<span class="plus">+</span></div>
+          <div class="stat-label">Years at HP / HPE</div>
+        </div>
+      </div>
+    </header>
 
-  <!-- PERSONAL -->
-  <section id="personal">
-    <div class="section-label">Personal</div>
-    <div class="personal-list">
-      <div class="personal-item">🎓 B.Sc. Information Systems, PUCRS (2003–2007) · M.Sc. Test & QA Software, Feevale (2010–2011)</div>
-      <div class="personal-item">🏃 Long-distance runner — 1 marathon and 10+ half-marathons completed</div>
-      <div class="personal-item">🏔️ Hiking, snowboarding and cycling enthusiast</div>
-      <div class="personal-item">⚽ Football fan</div>
-      <div class="personal-item">✈️ Passionate traveller</div>
-      <div class="personal-item">🇧🇷 Born in Porto Alegre, Rio Grande do Sul, Brazil</div>
-    </div>
-  </section>
+    <!-- ─── ABOUT / SHORT BIO ──────────────────────────────────────────── -->
+    <section class="section-block" aria-labelledby="heading-about">
+      <div class="section-label" id="heading-about">About</div>
+      <div class="about-card">
+        <p class="about-text">
+          Senior QA Analyst with <strong>20+ years of experience</strong> in quality assurance, test automation, software testing, and enterprise system validation across international environments. Currently specializing in <strong>FinTech, payments, and Tax Free solutions at Planet</strong>. Experienced in validating complex business-critical workflows where accuracy, reliability, and security are essential.
+        </p>
 
-  <footer>
-    © 2026 Felipe Fiori · Galway, Ireland
-  </footer>
+        <!-- Prominent Contact Note -->
+        <div class="contact-notice" role="note">
+          <span class="notice-icon" aria-hidden="true">💬</span>
+          <div class="notice-content">
+            <strong>Professional with hearing impairment</strong> &mdash; please contact via email, SMS, WhatsApp, or instant messaging.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CAREER HISTORY ─────────────────────────────────────────────── -->
+    <section class="section-block" aria-labelledby="heading-career">
+      <div class="section-label" id="heading-career">Career History</div>
+      <div class="timeline">
+        
+        <!-- Planet -->
+        <article class="timeline-card">
+          <div class="company-header">
+            <div>
+              <h2 class="company-name">Planet</h2>
+              <span class="company-location">Galway, Ireland</span>
+            </div>
+            <span class="company-duration">2018 &ndash; Present &middot; 8+ Years</span>
+          </div>
+
+          <div class="role-block">
+            <div class="role-header">
+              <h3 class="role-title">Senior QA Analyst</h3>
+              <span class="role-dates">Sep 2022 &ndash; Present</span>
+            </div>
+            <p class="role-description">
+              Lead QA activities across Planet&rsquo;s Tax Free and FinTech platforms. Maintain automated testing solutions with Sahi Pro and leverage modern AI-powered tools (GitHub Copilot, Playwright) for test acceleration. Manage and maintain QA virtual test environments and Windows Server test infrastructure.
+            </p>
+          </div>
+
+          <div class="role-block">
+            <div class="role-header">
+              <h3 class="role-title">Software QA Tester</h3>
+              <span class="role-dates">Sep 2018 &ndash; Sep 2022</span>
+            </div>
+            <p class="role-description">
+              Executed manual and automated testing for Web &amp; Mobile applications across functional and regression cycles. Created comprehensive test plans, tracked defects, and collaborated with distributed teams.
+            </p>
+            <div class="award-pill">
+              <span>🏆</span> 2021 Planet Q2 Star Award Winner
+            </div>
+          </div>
+        </article>
+
+        <!-- HPE -->
+        <article class="timeline-card">
+          <div class="company-header">
+            <div>
+              <h2 class="company-name">Hewlett Packard Enterprise (HPE)</h2>
+              <span class="company-location">Porto Alegre, Brazil</span>
+            </div>
+            <span class="company-duration">2015 &ndash; 2018</span>
+          </div>
+
+          <div class="role-block">
+            <div class="role-header">
+              <h3 class="role-title">Software QA Engineer</h3>
+              <span class="role-dates">Nov 2015 &ndash; Mar 2018</span>
+            </div>
+            <p class="role-description">
+              Led software integration, release management, and test plan execution for mission-critical enterprise clients such as Bradesco, MetroSP, and BrasilCap in Agile/Scrum environments.
+            </p>
+            <div class="award-pill">
+              <span>⭐</span> 10x HPE Recognition Awards (Bias for Action &middot; Partnership First)
+            </div>
+          </div>
+        </article>
+
+        <!-- HP -->
+        <article class="timeline-card">
+          <div class="company-header">
+            <div>
+              <h2 class="company-name">HP</h2>
+              <span class="company-location">Porto Alegre, Brazil</span>
+            </div>
+            <span class="company-duration">2006 &ndash; 2015 &middot; 9 Years</span>
+          </div>
+
+          <div class="role-block">
+            <div class="role-header">
+              <h3 class="role-title">Software QA Engineer &amp; Tester</h3>
+              <span class="role-dates">Nov 2006 &ndash; Oct 2015</span>
+            </div>
+            <p class="role-description">
+              9 years driving the QA lifecycle, root cause analysis, and system testing for enterprise client products. Conducted test automation, hardware/VM environment configuration, and defect resolution.
+            </p>
+            <div class="award-pill">
+              <span>🏅</span> HP Service Award (5 Years) &middot; Multiple Recognition Awards
+            </div>
+          </div>
+        </article>
+
+        <!-- Early Career -->
+        <article class="timeline-card">
+          <div class="company-header">
+            <div>
+              <h2 class="company-name">Early Career (DBServer / Dell / ESF)</h2>
+              <span class="company-location">Porto Alegre, Brazil</span>
+            </div>
+            <span class="company-duration">2003 &ndash; 2006</span>
+          </div>
+
+          <div class="role-block">
+            <div class="role-header">
+              <h3 class="role-title">Software Tester Intern &amp; GUI Designer</h3>
+              <span class="role-dates">2003 &ndash; 2006</span>
+            </div>
+            <p class="role-description">
+              Built core foundational expertise in GUI design, test script execution, automated testing, and R&amp;D software validation before being hired into HP.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ─── SKILLS & TOOLKIT ───────────────────────────────────────────── -->
+    <section class="section-block" aria-labelledby="heading-skills">
+      <div class="section-label" id="heading-skills">Skills &amp; Toolkit</div>
+      <div class="toolkit-grid">
+        
+        <div class="toolkit-group">
+          <div class="toolkit-title">🧪 QA &amp; Automation</div>
+          <div class="tags-cloud">
+            <span class="tag tag-highlight">Sahi Pro</span>
+            <span class="tag tag-highlight">Postman</span>
+            <span class="tag tag-highlight">API Testing</span>
+            <span class="tag tag-highlight">Regression Testing</span>
+            <span class="tag tag-highlight">Functional Testing</span>
+            <span class="tag tag-highlight">Exploratory Testing</span>
+            <span class="tag">Playwright</span>
+            <span class="tag">Tricentis Tosca</span>
+            <span class="tag">Ghost Inspector</span>
+            <span class="tag">UAT</span>
+          </div>
+        </div>
+
+        <div class="toolkit-group">
+          <div class="toolkit-title">🤖 AI &amp; Productivity</div>
+          <div class="tags-cloud">
+            <span class="tag tag-highlight">ChatGPT</span>
+            <span class="tag tag-highlight">Gemini</span>
+            <span class="tag tag-highlight">GitHub Copilot</span>
+            <span class="tag tag-highlight">Prompt Engineering</span>
+            <span class="tag tag-highlight">VS Code</span>
+            <span class="tag tag-highlight">AI-Augmented QA</span>
+            <span class="tag">Microsoft 365 Copilot</span>
+            <span class="tag">Claude Code</span>
+          </div>
+        </div>
+
+        <div class="toolkit-group">
+          <div class="toolkit-title">⚙️ Tools &amp; Platforms</div>
+          <div class="tags-cloud">
+            <span class="tag tag-highlight">Jira</span>
+            <span class="tag tag-highlight">Confluence</span>
+            <span class="tag tag-highlight">Xray</span>
+            <span class="tag tag-highlight">Jenkins</span>
+            <span class="tag tag-highlight">Agile / Scrum</span>
+            <span class="tag">TestRail</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">Azure VMs</span>
+            <span class="tag">OutSystems</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── LANGUAGES ──────────────────────────────────────────────────── -->
+    <section class="section-block" aria-labelledby="heading-languages">
+      <div class="section-label" id="heading-languages">Languages</div>
+      <div class="languages-grid">
+        <div class="language-card">
+          <div class="language-header">
+            <span class="language-flag" aria-hidden="true">🇧🇷</span>
+            <span class="language-name">Portuguese</span>
+          </div>
+          <span class="language-level">Native</span>
+        </div>
+
+        <div class="language-card">
+          <div class="language-header">
+            <span class="language-flag" aria-hidden="true">🇬🇧</span>
+            <span class="language-name">English</span>
+          </div>
+          <span class="language-level">Advanced / Fluent</span>
+        </div>
+
+        <div class="language-card">
+          <div class="language-header">
+            <span class="language-flag" aria-hidden="true">🇪🇸</span>
+            <span class="language-name">Spanish</span>
+          </div>
+          <span class="language-level">Basic</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── BEYOND THE CODE / PERSONAL JOURNEY ─────────────────────────── -->
+    <section class="section-block" aria-labelledby="heading-beyond">
+      <div class="section-label" id="heading-beyond">Beyond the Code</div>
+      <div class="beyond-card">
+        
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.74rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.75rem; letter-spacing: 0.08em;">
+            🌍 International Journey
+          </div>
+          <div class="journey-path">
+            <span class="journey-step">🇧🇷 Porto Alegre, Brazil</span>
+            <span class="journey-arrow" aria-hidden="true">&rarr;</span>
+            <span class="journey-step">🇺🇸 Indianapolis, IN <small>(2001)</small></span>
+            <span class="journey-arrow" aria-hidden="true">&rarr;</span>
+            <span class="journey-step">🇮🇪 Dublin, Ireland <small>(Apr&ndash;Aug 2018)</small></span>
+            <span class="journey-arrow" aria-hidden="true">&rarr;</span>
+            <span class="journey-step">🇮🇪 Galway, Ireland <small>(Sep 2018&ndash;Present)</small></span>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.74rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.75rem; letter-spacing: 0.08em;">
+            🏃 Activities &amp; Passions
+          </div>
+          <div class="interests-grid">
+            <div class="interest-item">🏃 Marathon Finisher (1x Marathon &middot; 10+ Half-Marathons)</div>
+            <div class="interest-item">🏔️ Hiking &amp; Mountain Trails</div>
+            <div class="interest-item">🏂 Snowboarding</div>
+            <div class="interest-item">🌍 World Travel &amp; Exploring Cultures</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── CONNECT & LINKS ────────────────────────────────────────────── -->
+    <section class="section-block" aria-labelledby="heading-connect">
+      <div class="section-label" id="heading-connect">Connect</div>
+      <nav class="connect-group" aria-label="Professional Links">
+        <a class="btn-connect" href="https://www.linkedin.com/in/felipefiori" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a class="btn-connect" href="https://github.com/felipefiori" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <a class="btn-connect" href="mailto:felipefiori@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <span>Email</span>
+        </a>
+      </nav>
+    </section>
+
+    <!-- ─── FOOTER ─────────────────────────────────────────────────────── -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Felipe Fiori</p>
+    </footer>
+
+  </main>
 
 </body>
 </html>
