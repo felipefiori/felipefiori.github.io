@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://felipefiori.github.io"><strong>🌐 Visit My Portfolio Website »</strong></a>
+  <a href="https://felipefiori.github.io"><strong>🌐 Visit My Portfolio Website</strong></a>
 </p>
 
 ---
