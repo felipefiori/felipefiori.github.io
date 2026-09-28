@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Felipe Fiori 👋</h1>
+<h1 align="center">Hi, I'm Felipe Fiori Saldanha Silveira👋</h1>
 
 <p align="center">
   <strong>Senior QA Analyst</strong> · AI-Driven Test Automation · 20+ Years in Software Quality
